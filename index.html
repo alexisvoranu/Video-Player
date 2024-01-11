@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Player video</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    </head>
+
+    <body onresize="setup()">
+    
+        <div id="main-video">
+          <canvas id="video">
+              <video controls="controls" muted="muted"></video>           
+          </canvas>
+
+            <form id="effect-form">
+
+                <span>
+                    <input id="outline" name="outline" type="checkbox" onchange="setEffect(0)"/>
+                    <label for="outline">Add outline effect</label>
+                </span>
+                
+                <span>
+                    <input id="contrast" name="contrast" type="checkbox" onchange="setEffect(1)"/>
+                    <label for="contrast">Add contrast effect</label>           
+                </span>
+
+                <span>
+                    <input id="c2" name="c2" type="checkbox" onchange="setEffect(2)"/>
+                    <label for="c2">Add 2Channels effect</label>      
+                </span>
+
+                <span>
+                    <input id="blur" name="blur" type="checkbox" onchange="setEffect(3)"/>
+                    <label for="blur">Add blur effect</label>
+                    
+                </span>
+
+            </form>
+        </div>
+
+        <div id="playlist">
+
+            <label id="labelAdd" style="display: flex; align-items: center;">
+                <span>Add new video</span>
+                <img src="media/add.png" alt="add-icon">
+                <input id="btnAdd" type="file" accept="video/*" style="display: none;">
+            </label>
+            
+            <div id="container"></div>
+
+        </div>
+        
+        <script src="script.js"></script>
+        
+    </body>
+</html>
+
+
+    
+
+

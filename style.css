@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+    color: #F4F3EE;
+}
+
+#effect-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+span {
+    margin-right: 30px;
+}
+
+#video
+{
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+#main-video {
+    background-color: #259e9e;
+    color: #FCFFFC;
+    position: fixed;
+    top:-50px;
+    bottom: 0;
+    left: 0;
+    right: 30%;    
+}
+
+#playlist {
+    background-color: #2acf74;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 70%;
+    right: 0;  
+}
+
+#container {
+    background-color: #2acf74;
+    position: fixed;
+    top: 12%;
+    bottom: 0;
+    left: 70%;
+    right: 0; 
+    margin-top: 20px;
+}
+
+.card {
+    border-bottom: 2px solid #259e9e;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#labelAdd {
+    padding: 10px;
+    background-color: #259e9e;
+    border-radius: 10px;
+    float: right;
+    margin: 10px;
+}
+
+canvas {
+    border: 1px solid white;
+}
+
+#btnAdd {
+    display: none;
+}
+
+.delete {
+    height: 25px;
+    align-self: center;
+}
+
+form span {
+    display: block;
+    font-size: 11pt;
+}
